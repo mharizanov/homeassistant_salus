@@ -7,7 +7,12 @@ import voluptuous as vol
 from homeassistant.components.climate import PLATFORM_SCHEMA, ClimateEntity
 from homeassistant.components.climate.const import (
     HVACMode,
-    ClimateEntityFeature
+    ClimateEntityFeature,
+    FAN_AUTO,
+    FAN_OFF,
+    FAN_LOW,
+    FAN_MEDIUM,
+    FAN_HIGH
 )
 from homeassistant.const import (
     ATTR_TEMPERATURE,
