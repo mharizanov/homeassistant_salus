@@ -211,7 +211,7 @@ class SalusThermostat(ClimateEntity):
 
     async def async_set_fan_mode(self, fan_mode):
         """Set fan speed (auto, low, medium, high, off)."""
-        if fan_mode == HVACMode.FAN_OFF:
+        if fan_mode == HVACMode.FAN_ONLY:
             mode = "Off"
         elif fan_mode == HVACMode.FAN_LOW:
             mode = "Low"
